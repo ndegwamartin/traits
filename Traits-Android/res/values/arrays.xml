@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="fontSize">
+        <item name="0">8px</item>
+        <item name="1">10px</item>
+        <item name="2">12px</item>
+        <item name="3">14px</item>
+        <item name="4">16px</item>
+        <item name="5">18px</item>
+        <item name="6">20px</item>
+        <item name="7">22px</item>
+        <item name="8">24px</item>
+        <item name="9">26px</item>
+        <item name="10">28px</item>
+        <item name="11">30px</item>
+        <item name="12">32px</item>
+        <item name="13">34px</item>
+        <item name="14">36px</item>
+    </string-array>
+    <string-array name="fontSizeValues">
+        <item name="0">0</item>
+        <item name="1">1</item>
+        <item name="2">2</item>
+        <item name="3">3</item>
+        <item name="4">4</item>
+        <item name="5">5</item>
+        <item name="6">6</item>
+        <item name="7">7</item>
+        <item name="8">8</item>
+        <item name="9">9</item>
+        <item name="10">10</item>
+        <item name="11">11</item>
+        <item name="12">12</item>
+        <item name="13">13</item>
+        <item name="14">14</item>
+    </string-array>
+    <string-array name="theme_array">
+        <item>Random Art</item>
+        <item>White Black</item>
+        <item>Black White</item>
+        <item>White Red</item>
+        <item>Red White</item>
+        <item>White Green</item>
+        <item>Green White</item>
+        <item>White Blue</item>
+        <item>Blue White</item>
+        <item>White Purple</item>
+        <item>Purple White</item>
+        <item>White Orange</item>
+        <item>Orange White</item>
+    </string-array>
+    
+    <string-array name="theme_array_values"> 
+        <item name="100">100</item>
+        <item name="0">0</item>
+        <item name="1">1</item>
+        <item name="2">2</item>
+        <item name="3">3</item>
+        <item name="4">4</item>
+        <item name="5">5</item>
+        <item name="6">6</item>
+        <item name="7">7</item>
+        <item name="8">8</item>
+        <item name="9">9</item>
+        <item name="10">10</item>
+        <item name="11">11</item>
+    </string-array>
+    
+    <string-array name="typefaceArrayValue">
+        <item name="0">0</item>
+        <item name="1">1</item>
+        <item name="2">2</item>
+        <item name="3">3</item>
+        <item name="4">4</item>
+        <item name="5">5</item>
+    </string-array>
+    <string-array name="typefaceArray">
+        <item>Default Bold</item>
+        <item>Default</item>
+        <item>Monospace</item>
+        <item>Sans Serif</item>
+        <item>Serif</item>
+    </string-array>
+    <string-array name="typefaceStyleArrayValue">
+        <item name="0">0</item>
+        <item name="1">1</item>
+        <item name="2">2</item>
+        <item name="3">3</item>
+    </string-array> 
+    <string-array name="typefaceStyleArray">
+        <item>Normal</item>
+        <item>Italic</item>
+        <item>Bold</item>
+        <item>Bold Italic</item>
+    </string-array>
+</resources>

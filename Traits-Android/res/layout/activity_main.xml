@@ -1,0 +1,201 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#338C26CD"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/zero_padding"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/nameText"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginRight="0dip"
+            android:layout_marginEnd="0dip"
+            android:layout_marginTop="2dp"
+            android:layout_weight="4.5"
+            android:drawableLeft="@drawable/clearpurple"
+            android:drawableStart="@drawable/clearpurple"
+            android:hint="@string/enter_name"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColorHint="@color/silver" >
+        </EditText>
+
+        <Button
+            android:id="@+id/goButton"
+            style="@style/ButtonText"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="-1dp"
+            android:layout_weight="1"
+            android:background="@drawable/purple_btn"
+            android:text="@string/go" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/statsHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/top"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/statsHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/character_rating"
+            android:textColor="@color/BlueViolet"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/statsResultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/BlueViolet"
+            android:textSize="64sp" />
+
+        <TextView
+            android:id="@+id/statsSummaryText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:textColor="@color/BlueViolet"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="18dp" >
+
+        <RelativeLayout
+            android:id="@+id/scrollViewInner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"  >
+
+            <TextView
+                android:id="@+id/resultText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:background="@drawable/purple_border"
+                android:contentDescription="@string/the_image"
+                android:src="@drawable/traitsicon"
+       			android:layout_gravity="center" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="0dp" >
+
+        <LinearLayout
+            android:id="@+id/menu"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#668C26CD"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/alter_settings"
+                android:hapticFeedbackEnabled="true"
+                android:src="@drawable/settings" />
+
+            <Button
+                android:id="@+id/modeButton"
+                style="@style/ButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hapticFeedbackEnabled="true"
+                android:text="@string/mode" />
+
+            <ImageButton
+                android:id="@+id/fontButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/font_settings"
+                android:hapticFeedbackEnabled="true"
+                android:src="@drawable/font" />
+
+            <ImageButton
+                android:id="@+id/loadimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/choose_a_photo"
+                android:hapticFeedbackEnabled="true"
+                android:src="@drawable/cam" />
+
+            <ImageButton
+                android:id="@+id/shareButton"
+                style="@style/ButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/share"
+                android:hapticFeedbackEnabled="true"
+                android:src="@drawable/share" />
+        </LinearLayout>
+
+       
+       <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/ad_unit_id"/>
+      
+    </LinearLayout>
+
+</RelativeLayout>

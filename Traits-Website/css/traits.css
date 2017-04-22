@@ -1,0 +1,298 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.owl-dots{
+visibility:hidden;
+
+}
+
+/*
+ * Base structure
+ */
+ 
+
+html,
+body {
+  height: 100%;
+  background-color: #7644C1;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+#homeContentDiv{
+
+text-align:center;  
+}
+
+#phoneDiv{ 
+ text-align:center; 
+}
+
+#phoneDiv img{
+ margin-top:53px;
+}
+
+.owl-carousel.owl-loaded {
+    display: block; 
+}
+.dld-btn{
+background-color:#6C0187; 
+color:white
+}
+.dld-btn:hover{
+ background-color:#9802BD;
+ background-color:#8202A2; 
+ color:white
+}
+
+#phoneLogo{
+   margin-top:5px;
+   background-image: url("../images/phoneSlider.png");
+	background-repeat: no-repeat;
+	background-position: center middle;
+	width:270px;
+	height:505px;
+	padding:20px;
+	padding-left:22px;
+	padding-right:20px;
+	padding-top:40px;
+	padding-bottom:20px;
+}
+.mastfoot{ 
+ text-align:center; 
+ 
+}
+
+.features {
+  border-left: 0px solid #fff; 
+  margin-left: -2px;
+  position: relative;
+  text-align: left; 
+  padding-left:10%;
+  padding-top:8%;
+  padding-bottom:8%;
+}
+.features-list{
+text-align: left;
+  padding: 0;
+}
+
+.features-list li {
+  color: #cfd4d7;
+  font-family:  Arial,Helvetica,sans-serif;
+  font-size: 113%;
+  font-weight: 300;
+  list-style: outside none none;
+  margin-bottom: 8px; 
+  position: relative;
+  
+}
+.features-list li i.fa {
+  color: #fff;
+  font-size: 109%;
+  left: 0;
+  position: relative;
+  top: 2px; 
+}
+
+.masthead-nav i{
+  font-size:90%;
+}
+
+.features-title {
+  margin-bottom: 15px; 
+  text-align: center;
+}
+
+.dld-btn{
+margin-top: 4px;
+}
+.masthead-brand{
+font-weight:bold;
+}
+.motto{
+ font-size:52%;
+ font-weight:normal;
+}
+.features_list_full {
+  color: #cfd4d7;
+  font-family:  Arial,Helvetica,sans-serif;
+  font-size: 113%;
+  font-weight: 300; 
+  margin-bottom: 8px; 
+  position: relative;
+  text-align:justify;
+  
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+  
+  #homeContentDiv{
+
+	text-align:center; 
+	margin-top:35px;
+	}
+.features {
+  border-left: 2px solid #fff; 
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+.footer-links{
+font-size:90%;
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+  
+ .features-title {
+  margin-bottom: 28px; 
+  text-align: left;
+  }
+  
+  	
+ #phoneLogo{
+    margin-top:0px;
+ }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+  
+ }

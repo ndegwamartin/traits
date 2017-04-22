@@ -1,0 +1,7 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^traits\.olympusinteractive\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.traits\.olympusinteractive\.com$
+RewriteRule ^/?$ "http\:\/\/olympusinteractive\.com\/traits" [R=301,L]
+

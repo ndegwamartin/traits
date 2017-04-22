@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:icon="@null" xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/pref_data_settings" >
+        <EditTextPreference
+            android:key="prefNewTraitPositive"
+            android:summary="@string/pref_add_positive_trait_summary"
+            android:title="@string/pref_add_positive_trait" />
+        
+          <EditTextPreference
+            android:key="prefNewTraitNegative"
+            android:summary="@string/pref_add_negative_trait_summary"
+            android:title="@string/pref_add_negative_trait" /> 
+            
+           <com.olympuskid.tr8ts.preferences.SearchableTraitPreference  
+            android:key="prefManageTraits"
+            android:summary="@string/pref_manage_traits_summary"
+            android:title="@string/pref_manage_traits" />
+        
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_font_settings" >
+        <com.olympuskid.tr8ts.preferences.NumberPickerPreference
+            android:key="prefFontSize"
+            android:summary="@string/pref_font_size_summary"
+            android:title="@string/pref_font_size" />
+
+        <PreferenceScreen
+            android:key="prefFontStyle"
+            android:summary="@string/select_font_style"
+            android:title="Font Style" >
+            <ListPreference
+                android:entries="@array/typefaceArray"
+                android:entryValues="@array/typefaceArrayValue"
+                android:key="typeFace"
+                android:summary="@string/pref_typeface_summary"
+                android:title="@string/pref_font_typeface"
+                android:dialogIcon="@drawable/traitsicon"
+                android:defaultValue="1"  />
+            <ListPreference
+                android:entries="@array/typefaceStyleArray"
+                android:entryValues="@array/typefaceStyleArrayValue"
+                android:key="typeFaceStyle"
+                android:summary="@string/pref_typeface_style_summary"
+                android:title="@string/pref_font_typeface_style"
+                android:dialogIcon="@drawable/traitsicon"
+                android:defaultValue="0" />
+        </PreferenceScreen>
+
+         <ListPreference
+                android:entries="@array/theme_array"
+                android:entryValues="@array/theme_array_values"
+                android:key="prefFontTheme"
+                android:summary="@string/pref_font_theme_summary"
+                android:title="@string/pref_set_theme"
+                android:dialogIcon="@drawable/traitsicon"
+                android:defaultValue="100" />   
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/pref_generation_settings" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefIsCustomMode"
+            android:summary="@string/pref_gen_settings_summary"
+            android:title="@string/pref_gen_settings" >
+        </CheckBoxPreference>
+        
+    </PreferenceCategory>
+
+</PreferenceScreen>
